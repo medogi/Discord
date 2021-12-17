@@ -61,7 +61,7 @@ public class AppUserService implements UserDetailsService {
 
     }
 
-    //TODO: pirvelzze ar anichebs vericikacias adre pirdapir akeTebda exla orjer unda mimarto endpoint ze da unda tavidan gavushva api
+
     public void verifiychecker(int id) {
         AppUser appUser = appUserRepository.findByVer(id);
         appUser.setEnabled(true);

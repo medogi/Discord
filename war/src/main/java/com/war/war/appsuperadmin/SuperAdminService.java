@@ -21,7 +21,7 @@ public class SuperAdminService {
         }
 
     }
-//TODO: esec orjertu ar gavushvi api ar update ebs
+
     public void changerank(AppSuperAdminDTO appSuperAdminDTO) {
         AppUser appUser = ((AppUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal());
         if (appUser.getAppUserRole().equals(AppUserRole.SUPERADMIN)) {
